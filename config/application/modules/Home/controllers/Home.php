@@ -14,6 +14,11 @@ class Home extends CI_Controller{
 	{
 		echo "hello module";
 	}
+
+	public function abc()
+	{
+		$this->load->view('abc');
+	}
 }
 
 ?>
