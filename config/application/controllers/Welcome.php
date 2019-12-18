@@ -25,11 +25,16 @@ class Welcome extends CI_Controller {
 
 	public function login()
 	{
-		echo $this->load->view('login');
+		echo $this->load->view('admin/login');
 	}
 
 	public function registration()
 	{
-		$this->load->view('register');
+		$this->load->view('admin/register');
+	}
+
+	public function dashboard()
+	{
+		$this->load->view('admin/index');
 	}
 }

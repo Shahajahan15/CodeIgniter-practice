@@ -35,16 +35,16 @@
                                     <h3>SCSE</h3>
                                 </div>
 
-                                <form action="#">
+                                <form action="<?php echo base_url(); ?>welcome/dashboard">
 
                                     <div class="form-group mb-3">
                                         <label for="emailaddress">Email address</label>
-                                        <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                        <input class="form-control" type="email" id="emailaddress" placeholder="Enter your email">
                                     </div>
 
                                     <div class="form-group mb-3">
                                         <label for="password">Password</label>
-                                        <input class="form-control" type="password" required="" id="password" placeholder="Enter your password">
+                                        <input class="form-control" type="password" id="password" placeholder="Enter your password">
                                     </div>
 
                                     <div class="form-group mb-3">
