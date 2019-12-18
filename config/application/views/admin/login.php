@@ -29,22 +29,25 @@
                             <div class="card-body p-4">
                                 
                                 <div class="text-center w-75 m-auto">
-                                    <!-- <a href="index.html">
-                                        <span><img src="<?php echo base_url(); ?>assets/admin/assets/images/logo-dark.png" alt="" height="22"></span>
-                                    </a> -->
                                     <h3>SCSE</h3>
                                 </div>
+                                <?php
+                                    if ($this->session->flashdata('err_msg')) {
+                                        $err_msg = $this->session->flashdata('err_msg');
+                                        echo "<p class='alert alert-danger'>$err_msg</P>";
+                                    }
+                                ?>
 
-                                <form action="<?php echo base_url(); ?>welcome/dashboard">
+                                <form method="post" action="<?php echo base_url(); ?>Home/Login/login_check">
 
                                     <div class="form-group mb-3">
-                                        <label for="emailaddress">Email address</label>
-                                        <input class="form-control" type="email" id="emailaddress" placeholder="Enter your email">
+                                        <label for="email">Email address</label>
+                                        <input class="form-control" type="email" id="email" name="email" placeholder="Enter your email" required="">
                                     </div>
 
                                     <div class="form-group mb-3">
                                         <label for="password">Password</label>
-                                        <input class="form-control" type="password" id="password" placeholder="Enter your password">
+                                        <input class="form-control" type="password" name="password" id="password" placeholder="Enter your password" required="">
                                     </div>
 
                                     <div class="form-group mb-3">
@@ -60,24 +63,6 @@
 
                                 </form>
 
-                                <!-- <div class="text-center">
-                                    <h5 class="mt-3 text-muted">Sign in with</h5>
-                                    <ul class="social-list list-inline mt-3 mb-0">
-                                        <li class="list-inline-item">
-                                            <a href="javascript: void(0);" class="social-list-item border-primary text-primary"><i class="mdi mdi-facebook"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="javascript: void(0);" class="social-list-item border-danger text-danger"><i class="mdi mdi-google"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-twitter"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="javascript: void(0);" class="social-list-item border-secondary text-secondary"><i class="mdi mdi-github-circle"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
- -->
                             </div> <!-- end card-body -->
                         </div>
                         <!-- end card -->
