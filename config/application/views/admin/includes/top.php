@@ -151,12 +151,10 @@
                 <div class="logo-box">
                     <a href="index.html" class="logo text-center">
                         <span class="logo-lg">
-                            <!-- <img src="<?php echo base_url(); ?>assets/admin/assets/images/logo-light.png" alt="" height="18"> -->
                             <span class="logo-lg-text-light">SCSE</span>
                         </span>
                         <span class="logo-sm">
                             <span class="logo-lg-text-light">S</span>
-                            <!-- <img src="<?php echo base_url(); ?>assets/admin/assets/images/logo-sm.png" alt="" height="24"> -->
                         </span>
                     </a>
                 </div>
@@ -166,6 +164,20 @@
                         <button class="button-menu-mobile waves-effect waves-light">
                             <i class="fe-menu"></i>
                         </button>
+                    </li>
+                    <li class="d-none d-sm-block">
+                        <form class="app-search">
+                            <div class="app-search-box">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                    <div class="input-group-append">
+                                        <button class="btn" type="submit">
+                                            <i class="fe-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </li>
                 </ul>
             </div>

@@ -16,7 +16,7 @@
                             <li>
                                 <a href="javascript: void(0);">
                                     <i class="mdi mdi-account-group mdi-18px"></i>
-                                    <span> Users </span>
+                                    <span> About </span>
                                     <span class="menu-arrow"></span>
                                 </a>
                                 <ul class="nav-second-level" aria-expanded="false">
@@ -118,12 +118,12 @@
                             </li>
 
                             <li>
-                                <a href="javascript: void(0);">
+                                <a href="<?php echo base_url()."service/service/index" ?>">
                                     <i class="fe-pocket"></i>
-                                    <span> Apps </span>
-                                    <span class="menu-arrow"></span>
+                                    <span> Service </span>
+                                    <!-- <span class="menu-arrow"></span> -->
                                 </a>
-                                <ul class="nav-second-level" aria-expanded="false">
+                                <!-- <ul class="nav-second-level" aria-expanded="false">
                                     <li>
                                         <a href="projects.html">Projects</a>
                                     </li>
@@ -133,7 +133,7 @@
                                     <li>
                                         <a href="contacts.html">Contacts</a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </li>
 
                             <li>
