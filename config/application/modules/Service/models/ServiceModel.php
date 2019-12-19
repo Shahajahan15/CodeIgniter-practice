@@ -10,6 +10,7 @@ class ServiceModel extends CI_Model{
 		}
 
 
+	//  add service
 	public function serviceAdd()
 	{
 		$data = array(
@@ -19,5 +20,14 @@ class ServiceModel extends CI_Model{
 		);
 
 		$this->db->insert('tbl_service', $data);
+	}
+
+
+	// select all service data
+	public function serviceInfo()
+	{
+		$query = "SELECT * FROM `tbl_service";
+		$result = $this->db->query($query)->result_array();
+		return $result;
 	}
 }

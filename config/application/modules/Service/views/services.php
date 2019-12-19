@@ -19,7 +19,10 @@
 				<div class="row">
 		            <div class="col-12">
 		                <div class="card-box">
-		                    <h3 class="header-title mb-3" style="font-size: 22px">Service Content Form</h3>
+		                    <div class="">
+		                    	<a href="<?php echo base_url() ?>/service/service/viewService" class="float-right btn btn-success">View Service</a>
+		                    	<h3 class="header-title mb-3" style="font-size: 22px">Service Content Form</h3>
+		                    </div>
 
 							<?php  
 

@@ -25,7 +25,11 @@ class Welcome extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
-	//  View sction
+	/**
+		Font End sction  start here -- 
+	*	index page
+
+	*/
 	public function index()
 	{
 		$data['serviceInfo'] = $this->load->HomeModel->serviceInfo();
@@ -33,7 +37,13 @@ class Welcome extends CI_Controller {
 	}
 
 
-	//  Admin section
+	/**  
+		Admin section start here --
+	*	login section
+	*	registration section
+	*	admin dashboard
+	*/
+
 	public function login()
 	{
 		echo $this->load->view('admin/login');

@@ -7,7 +7,7 @@
 
                         <ul class="metismenu" id="side-menu">
                             <li>
-                                <a href="">
+                                <a href="<?php echo base_url()."welcome/dashboard" ?>">
                                     <i class="fas fa-tachometer-alt"></i>
                                     <span> Dashboard </span>
                                 </a>

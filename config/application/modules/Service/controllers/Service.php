@@ -9,11 +9,14 @@ class Service extends CI_Controller {
 			$this->load->model('ServiceModel');	
 		}
 
+
 	public function index()
 	{
 		$this->load->view('services');
 	}
 
+
+	// service added to admin here 
 	public function serviceAdd()
 	{
 		if ( isset($_POST['submit']) == 'Submit' ) {
@@ -25,6 +28,15 @@ class Service extends CI_Controller {
 			redirect(base_url().'service/service/index');
 		}	
 	}
+
+
+	// service view to admin here 
+	public function viewService()
+	{
+		$data['serviceInfo'] = $this->load->ServiceModel->serviceInfo();
+		$this->load->view('serviceView', $data);
+	}
+
 
 }
 

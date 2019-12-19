@@ -173,7 +173,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-6 full-wd600">
                     <div class="serviceBox wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
                         <div class="service-icon">
-                            <i class="<?php echo $value['icon']; ?>"></i>
+                            <i class="zmdi <?php echo $value['icon']; ?>"></i>
                         </div>
                         <h3 class="title"><?php echo $value['title']; ?></h3>
                         <p class="description">
@@ -186,7 +186,7 @@
                 <?php
                     }
                 ?>
-                
+
             </div>
         </div>
     </section>
