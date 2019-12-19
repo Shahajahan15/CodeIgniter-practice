@@ -16,8 +16,14 @@ class Service extends CI_Controller {
 
 	public function serviceAdd()
 	{
-		// $this->load->model('ServiceModel');	
-		$this->ServiceModel->serviceAdd();
+		if ( isset($_POST['submit']) == 'Submit' ) {
+			$this->ServiceModel->serviceAdd();
+			$this->session->set_flashdata('message', 'Successfully data inserted.');
+			redirect(base_url().'service/service/index');
+		}else{
+			$this->session->set_flashdata('err_msg', 'Data not inserted, Try again!');
+			redirect(base_url().'service/service/index');
+		}	
 	}
 
 }

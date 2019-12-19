@@ -34,7 +34,7 @@
                                 <?php
                                     if ($this->session->flashdata('err_msg')) {
                                         $err_msg = $this->session->flashdata('err_msg');
-                                        echo "<p class='alert alert-danger'>$err_msg</P>";
+                                        echo "<p class='alert alert-danger' id='myData'>$err_msg</P>";
                                     }
                                 ?>
 
@@ -90,6 +90,12 @@
         <footer class="footer footer-alt">
             2018 - <?php echo date("Y"); ?> &copy; SCSE theme by <a href="#" class="text-white-50">Shahajahan</a> 
         </footer>
+
+        <script>
+            setTimeout(function(){
+                $('#myData').hide()
+            },3000)
+        </script>
 
         <!-- Vendor js -->
         <script src="<?php echo base_url(); ?>assets/admin/assets/js/vendor.min.js"></script>

@@ -20,6 +20,21 @@
 		            <div class="col-12">
 		                <div class="card-box">
 		                    <h3 class="header-title mb-3" style="font-size: 22px">Service Content Form</h3>
+
+							<?php  
+
+								if ($this->session->flashdata('message')) 
+								{
+									$message = $this->session->flashdata('message');
+                                    echo "<p class='alert alert-success' id='myData'>$message</P>";
+								}
+								elseif($this->session->flashdata('err_msg'))
+								{
+									$err_msg = $this->session->flashdata('err_msg');
+                                    echo "<p class='alert alert-danger'>$err_msg</P>";
+								}
+							?>
+
 		                    <form method="post" action="<?php echo base_url();?>service/service/serviceAdd" enctype="">
 		                        <div class="form-group row">
 		                            <label for="icon" class="col-form-label col-2">Icon :</label>
@@ -54,6 +69,12 @@
 		        </div>
 		    </div>
 		</div> 
+
+		<script>
+			setTimeout(function(){
+				$('#myData').hide(1000)
+			},5000)
+		</script>
 
 <?php 
 
