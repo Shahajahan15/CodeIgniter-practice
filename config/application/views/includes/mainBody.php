@@ -165,78 +165,28 @@
                 </div>
             </div>
             <div class="row">
+
+                <?php 
+                    foreach ($serviceInfo as $key => $value) {
+                ?>
+
                 <div class="col-md-4 col-sm-6 col-xs-6 full-wd600">
                     <div class="serviceBox wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
                         <div class="service-icon">
-                            <i class="zmdi zmdi-laptop-mac"></i>
+                            <i class="<?php echo $value['icon']; ?>"></i>
                         </div>
-                        <h3 class="title">Web Design</h3>
+                        <h3 class="title"><?php echo $value['title']; ?></h3>
                         <p class="description">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                            <?php echo $value['description']; ?>
                         </p>
-                        <span class="number">1</span>
+                        <span class="number"><?php echo $value['id']; ?></span>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 full-wd600">
-                    <div class="serviceBox wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="service-icon">
-                            <i class="zmdi zmdi-language-javascript"></i>
-                        </div>
-                        <h3 class="title">Web development</h3>
-                        <p class="description">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
-                        </p>
-                        <span class="number">2</span>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 full-wd600">
-                    <div class="serviceBox wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <div class="service-icon">
-                            <i class="zmdi zmdi-view-dashboard"></i>
-                        </div>
-                        <h3 class="title">WordPress</h3>
-                        <p class="description">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
-                        </p>
-                        <span class="number">3</span>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 full-wd600">
-                    <div class="serviceBox wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
-                        <div class="service-icon">
-                            <i class="zmdi zmdi-devices"></i>
-                        </div>
-                        <h3 class="title">responsive design</h3>
-                        <p class="description">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
-                        </p>
-                        <span class="number">4</span>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 full-wd600">
-                    <div class="serviceBox wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="service-icon">
-                            <i class="zmdi zmdi-search-in-file"></i>
-                        </div>
-                        <h3 class="title">web research</h3>
-                        <p class="description">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
-                        </p>
-                        <span class="number">5</span>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 full-wd600">
-                    <div class="serviceBox wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <div class="service-icon">
-                            <i class="zmdi zmdi-language-html5"></i>
-                        </div>
-                        <h3 class="title">HTML5</h3>
-                        <p class="description">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
-                        </p>
-                        <span class="number">6</span>
-                    </div>
-                </div>
+
+                <?php
+                    }
+                ?>
+                
             </div>
         </div>
     </section>
