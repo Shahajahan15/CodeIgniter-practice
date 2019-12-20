@@ -37,6 +37,18 @@ class Service extends CI_Controller {
 		$this->load->view('serviceView', $data);
 	}
 
+	// service delete to admin here
+	public function deleteService()
+	{
+		$data_id = $this->input->post('data_value');
+		$this->db->where('id', $data_id);
+		$this->db->delete('tbl_service');
+		$this->session->set_flashdata('delete', 'Successfully data deleted.');
+		redirect(base_url().'service/service/viewService');
+
+	}
+
+
 
 }
 

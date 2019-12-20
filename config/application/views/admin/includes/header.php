@@ -17,6 +17,7 @@
         <!-- third party css -->
         <link href="<?php echo base_url(); ?>assets/admin/assets/libs/datatables/dataTables.bootstrap4.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url(); ?>assets/admin/assets/libs/datatables/responsive.bootstrap4.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
         <!-- third party css end -->
 
         <!-- App css -->
